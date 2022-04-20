@@ -41,7 +41,9 @@ s[i] 到其右侧最近的字符 c 的距离
 1.对于前者，我们可以从左往右遍历 s，若 s[i]==c 可以标记idx 
 
 ![输入图片说明](1.png)
+
 2.对于后者，我们可以从右往左遍历 s，若 s[i]==c 则记录下此时字符 c 下标idx 
+
 ![输入图片说明](2.png)
 
 注意：
@@ -54,17 +56,13 @@ s[i] 到其右侧最近的字符 c 的距离
 因为-n设置初始值长度相反总是比长度小等于。且正向增加也是跟二次循环比是最小的。在二次右循环2n设置正向无穷大从无穷大向左移动，赋值时侯更新以此递减更新最小值。
 
 代码解图：
+
 ![输入图片说明](4.png)
-
-
-
-
-
-
 
 
 代码：
 
+```
 package leetcode.editor.cn;
 
 import java.util.Arrays;
@@ -107,6 +105,10 @@ class Solution {
 
     }
 }
-//leetcode submit region end(Prohibit modification and deletion)
-
 }
+//leetcode submit region end(Prohibit modification and deletion)
+```
+
+
+
+
