@@ -17,5 +17,5 @@ LeetCode每日一题解析使用文档
 
 #### 同步
 
-1.  github地址：[https://github.com/guoBaoRou08/leetcode-doc]
+1.  github地址：[https://github.com/guoBaoRou08/leetcode-doc](https://github.com/guoBaoRou08/leetcode-doc)
 
