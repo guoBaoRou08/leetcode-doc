@@ -17,6 +17,7 @@
 输入：sentence = "I speak Goat Latin"
 
 输出："Imaa peaksmaaa oatGmaaaa atinLmaaaaa"
+
 示例 2：
 
 输入：sentence = "The quick brown fox jumped over the lazy dog"
