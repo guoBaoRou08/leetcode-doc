@@ -10,7 +10,7 @@
 根据单词在句子中的索引，在单词最后添加与索引相同数量的字母'a'，索引从 1 开始。
 例如，在第一个单词后添加 "a" ，在第二个单词后添加 "aa" ，以此类推。
 返回将 sentence 转换为山羊拉丁文后的句子。
- 
+
 示例 1：
 输入：sentence = "I speak Goat Latin"输出："Imaa peaksmaaa oatGmaaaa atinLmaaaaa"
 示例 2：
