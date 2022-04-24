@@ -49,8 +49,60 @@
 
 ![输入图片说明](%E5%9B%BE%E7%89%87/%E4%BD%8D%E5%A5%87%E5%81%B6%E5%88%A4%E6%96%AD.png)
 
+![输入图片说明](%E5%9B%BE%E7%89%87/%E5%88%86%E6%9E%90%E8%A7%A3%E5%9B%BE.jpg)
  **代码截图** 
+
+![输入图片说明](%E5%9B%BE%E7%89%87/%E4%BB%A3%E7%A0%81%E8%A7%A3%E5%9B%BE.png)
+
  **解题源码** 
+
+```
+package leetcode.editor.cn;
+//Java：二进制间距
+ class P868BinaryGap{
+    public static void main(String[] args) {
+        Solution solution = new P868BinaryGap().new Solution();
+        // TO TEST
+        int inPut = 220;
+        int outPut = solution.binaryGap(inPut);
+        System.out.println("输入："+inPut);
+        System.out.println("输出："+outPut);
+    }
+    //leetcode submit region begin(Prohibit modification and deletion)
+    class Solution {
+        public int binaryGap(int n) {
+            //初始第一次出现位置，长度初始为0
+            int lastLocal = -1, res = 0;
+            //对目标数字二进制循环判断，如果等于0则输出res
+            for (int i = 0; n != 0; ++i) {
+                //与1位与判断是否最右面的数字是1还是0，
+                // 如果为0 则 n向低位右移动寻找1的位置如果为1进入判断
+                if ((n & 1) == 1) {
+                    //第一次出出现位置 不是-1则是第n次1出现位置
+                    if (lastLocal != -1) {
+                        //i - lastLocal 表示最新出现1的位置 和上次出现1的位置之间距离
+                        //上次距离计算和最新距离计算刷新结果取最远值
+                        res = Math.max(res, i - lastLocal);
+                    }
+                    //是第一次发现并把的二次位置赋值到变量 或 直接更新最新发现1的位置
+                    lastLocal = i;
+                }
+                n >>= 1;
+            }
+            return res;
+
+        }
+    }
+//leetcode submit region end(Prohibit modification and deletion)
+
+}
+```
+
  **输出结果** 
+
+![输入图片说明](%E5%9B%BE%E7%89%87/%E8%BE%93%E5%87%BA%E8%A7%A3%E5%9B%BE.png)
+
  **官方测试** 
+
+![输入图片说明](%E5%9B%BE%E7%89%87/%E5%AE%98%E6%96%B9%E6%B5%8B%E8%AF%95.png)
 
