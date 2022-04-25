@@ -148,4 +148,43 @@ import java.util.Random;
 ![输入图片说明](%E5%9B%BE%E7%89%87/%E5%AE%98%E6%96%B9%E6%B5%8B%E8%AF%95.png)
 
 ![输入图片说明](%E5%9B%BE%E7%89%87/%E5%AE%98%E6%96%B9%E6%B5%8B%E8%AF%952.png)
+ 
 
+ **暴力算法求解：** 
+
+代码截图：
+
+![输入图片说明](%E5%9B%BE%E7%89%87/%E6%9A%B4%E5%8A%9B%E4%BB%A3%E7%A0%81%E6%88%AA%E5%9B%BE.png)
+
+ **解题源码** 
+
+```
+    class Solution {
+        //初始化数据
+        Map<Integer, List<Integer>> pos;
+        Random random;
+        public Solution(int[] nums) {
+            //建立map
+            pos = new HashMap<Integer, List<Integer>>();
+            random = new Random();
+            for (int i = 0; i < nums.length; ++i) {
+                //给所有数字添加key和数组value出现下标索引
+                pos.putIfAbsent(nums[i], new ArrayList<Integer>()); //当出现返回旧的数组，否则插入新数组
+                pos.get(nums[i]).add(i);//给数组添加下标
+            }
+        }
+        public int pick(int target) {
+            //获得目标key的value数组
+            List<Integer> indices = pos.get(target);
+            //获得随机索，取索引数组长度为概率分母，概率均一样
+            return indices.get(random.nextInt(indices.size()));
+        }
+    }
+```
+
+ **输出结果** 
+
+![输入图片说明](%E5%9B%BE%E7%89%87/%E6%9A%B4%E5%8A%9B%E7%AE%97%E6%B3%95%E7%94%A8%E4%BE%8B.png)
+ **官方测试** 
+
+![输入图片说明](%E5%9B%BE%E7%89%87/%E6%9A%B4%E5%8A%9B%E7%AE%97%E6%B3%95%E5%AE%98%E6%96%B9%E6%B5%8B%E8%AF%95.png)
