@@ -140,7 +140,7 @@ import java.util.Random;
 
 **输出结果**
 
-
+![输入图片说明](%E5%9B%BE%E7%89%87/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B.png)
 
 
 **官方测试**
