@@ -1,6 +1,6 @@
 **每日一题**
 
-- - [905. 按奇偶排序数组](https://leetcode-cn.com/problems/sort-array-by-parity/)
+[905. 按奇偶排序数组](https://leetcode-cn.com/problems/sort-array-by-parity/)
 
     难度简单248收藏分享切换为英文接收动态反馈
 
@@ -34,10 +34,9 @@
 
 **题干截图**
 
-
+![输入图片说明](%E5%9B%BE%E7%89%87/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98.png)
 
 **代码分析**
-
 
 
 思路与算法
@@ -54,8 +53,12 @@
 
 
 **代码截图**
+![输入图片说明](%E5%9B%BE%E7%89%87/%E4%BB%A3%E7%A0%81%E6%88%AA%E5%9B%BE1.png)
+
+![输入图片说明](%E5%9B%BE%E7%89%87/%E4%BB%A3%E7%A0%81%E6%88%AA%E5%9B%BE2.png)
 
 
+![输入图片说明](%E5%9B%BE%E7%89%87/%E4%BB%A3%E7%A0%81%E6%88%AA%E5%9B%BE3.png)
 
 **解题源码**
 
@@ -144,9 +147,10 @@ import java.util.Arrays;
 
 **输出结果**
 
-
+![输入图片说明](%E5%9B%BE%E7%89%87/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B.png)
 
 **官方测试**
 
+![输入图片说明](%E5%9B%BE%E7%89%87/%E5%AE%98%E6%96%B9%E7%94%A8%E4%BE%8B1.png)
 
 
